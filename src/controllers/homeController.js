@@ -2,8 +2,6 @@ import db from '../models/index'
 let getHomePage = async (req, res) => {
     try {
         let data = await db.User.findAll()
-        console.log('-------------');
-        console.log(data);
         return res.render('homepages.ejs',{
             data: JSON.stringify(data)
         })
