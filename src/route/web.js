@@ -6,15 +6,10 @@ import homeController from "../controllers/homeController";
 let router = express.Router();
 let initWebRoutes = (app) => {
     router.get("/", homeController.getHomePage)
-
-    // rest api
-    router.get("/ldat", (req, res) => {
-        return res.send('ldat')
-    })
-
-
+    router.get("/crud", homeController.getCRUD)
     
-    
+    router.post("/post-crud", homeController.getPost)
+
     return app.use("/", router);
 }
 module.exports = initWebRoutes

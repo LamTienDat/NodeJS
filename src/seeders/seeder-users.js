@@ -9,8 +9,7 @@ module.exports = {
       lastName: 'dat',
       address : 'ha noi',
       gender : '1',
-      typeRole : 'ROLE',
-      keyRole: 'R1',
+      image: 'abc',
       createdAt: new Date(),
       updatedAt: new Date()
     }]);
